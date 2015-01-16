@@ -129,6 +129,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			display: none; /*<-----THIS IS STEP ONEInitially, the Tweet button and the character count button should be hidden*/
 		}
 			#tweet-controls div {
 				display: inline-block;
