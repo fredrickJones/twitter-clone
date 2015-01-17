@@ -30,7 +30,9 @@ $(document).ready(function () {
 		//});
 	});
 
-	//$()
+	$('#tweet-submit').on('click', function() {
+		$('#stream').prepend();
+	});
 
 
 
