@@ -18,10 +18,11 @@ $(document).ready(function () {
 		} else {
 			$('#tweet-submit').prop('disabled', false);
 		};
+
 		//$('#tweet-content .tweet-compose').keypress(function(e) {
 			//var tval = $('.tweet-compose').val(),
     		//tlength = tval.length,
-        	//set = 141,
+        	//set = 139,
         	//remain = parseInt(set - tlength);
         	//$('#char-count').text(remain);
         	//if (remain <= 0 && e.which !== 0 && e.charCode !== 0) {
@@ -30,8 +31,12 @@ $(document).ready(function () {
 		//});
 	});
 
+
+
 	$('#tweet-submit').on('click', function() {
-		$('#stream').prepend();
+		console.log('test tweet');
+		$('#stream').prepend('.tweet');
+		$('#stream .tweet .content').append('#profile-summary', '#tweet-content', '.tweet-actions', '.stats', '.time', '.reply');
 	});
 
 
